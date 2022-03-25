@@ -105,7 +105,8 @@ $(".list-group").on("click", "span", function() {
   dateInput.trigger("focus");
 });
 
-$(".list-group").on("blur", "input", function() {
+// value of due date was changed
+$(".list-group").on("blur", "input[type='text']", function() {
   // get current text
   var date = $(this)
     .val()
